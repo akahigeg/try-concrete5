@@ -1,0 +1,6 @@
+---
+- hosts: vagrants
+  sudo: yes
+  roles:
+    - webtier
+
