@@ -68,17 +68,17 @@
   copy: src="php.ini" dest="/etc/php.ini" owner=root group=root mode=0644
 
 # contents directory
-- name: document root exists
-  file: path=/vagrant/concrete5 state=directory owner=vagrant group=apache mode=2775
-
-- name: concrete5/packages is writable for httpd
-  file: path=/vagrant/concrete5/packages state=directory owner=vagrant group=apache mode=2775
-
-- name: concrete5/application/config is writable for httpd
-  file: path=/vagrant/concrete5/application/config state=directory owner=vagrant group=apache mode=2775
-
-- name: concrete5/application/files is writable for httpd
-  file: path=/vagrant/concrete5/application/files state=directory owner=vagrant group=apache mode=2775
+#- name: document root exists
+#  file: path=/vagrant/concrete5 state=directory owner=vagrant group=apache mode=2775
+#
+#- name: concrete5/packages is writable for httpd
+#  file: path=/vagrant/concrete5/packages state=directory owner=vagrant group=apache mode=2775
+#
+#- name: concrete5/application/config is writable for httpd
+#  file: path=/vagrant/concrete5/application/config state=directory owner=vagrant group=apache mode=2775
+#
+#- name: concrete5/application/files is writable for httpd
+#  file: path=/vagrant/concrete5/application/files state=directory owner=vagrant group=apache mode=2775
 
 # virtual host
 - name: concrete5 is configured
